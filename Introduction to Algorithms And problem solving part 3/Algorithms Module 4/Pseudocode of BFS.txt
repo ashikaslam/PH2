@@ -1,0 +1,22 @@
+Pseudocode of BFS
+==================
+
+
+
+Input -> Connected Graph and a "source"
+Output -> Traverse all nodes and print the traversal order
+
+BFS (graph, source):
+
+-Initiate an array called "visited" and an empty queue "q"          [O(1)]
+- mark visited[source] = 1 and q.push(source)                       [O(1)]
+-while the queue is not empty:
+  -head = q.front()         [O(1)]    v                                     
+  - q.pop() -               [O(1)]    v 
+  -print the node "head"
+  -l adjacent nodes of for al"head":   o(E) 
+    -if visited [adj_node] == 0:
+      -visited [adj_node] = 1 and q.push(adj_node)
+
+
+      total time complexity of this code is v+e;
